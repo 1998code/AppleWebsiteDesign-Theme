@@ -10,24 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css?h=2c0fc24b3d3038317dc51c05339856d0">
     <link rel="stylesheet" href="assets/css/styles.min.css?h=77e5c95d445a616985898be60d9625f6">
-    <!-- Matomo -->
-    <script type="text/javascript">
-      var _paq = window._paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-      _paq.push(["setDomains", ["*.1998code.github.io"]]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="https://stats.1998.media/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '7']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <noscript><p><img src="https://stats.1998.media/matomo.php?idsite=7&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-    <!-- End Matomo Code -->
 </head>
 
 <body>
@@ -105,7 +87,6 @@
                 <div class="links small-link-margin"><a class="learn-more" href="#">Learn more &nbsp;<i class="fa fa-angle-right"></i></a><a href="#">Buy&nbsp;<i class="fa fa-angle-right"></i></a></div><img class="img-fluid" src="assets/img/watch_series_3_large.jpg?h=af14e1f89d47489e0217d2c9eec76c20"></div>
         </div>
     </div>
-    <!-- Start: Corporate Footer Clean -->
     <footer class="page-footer">
         <div class="container">
             <div class="row">
@@ -178,7 +159,30 @@
             </div>
         </div>
     </footer>
-    <!-- End: Corporate Footer Clean -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCHi5MyU6NzdbDUP1n7r90Jv5lLJWs9NOs",
+        authDomain: "bootstrap-themes-os.firebaseapp.com",
+        databaseURL: "https://bootstrap-themes-os.firebaseio.com",
+        projectId: "bootstrap-themes-os",
+        storageBucket: "bootstrap-themes-os.appspot.com",
+        messagingSenderId: "294013755462",
+        appId: "1:294013755462:web:aed693891914c13e67aa47",
+        measurementId: "G-BBEBGDK3WL"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 </body>
